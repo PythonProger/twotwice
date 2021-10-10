@@ -2,10 +2,10 @@
 		"use strict"
 const arrayA = [7, 17, 1, 9, 1, 17, 56, 56, 23];
 const arrayB = [56, 17, 17, 1, 23, 34, 23, 1, 8, 1];
-let sameItems = [];
 function compareItems(arrayA, arrayB) {
 	let counter = 0;
 	let starter = 0;
+	let sameItems = [];
 	let arrayC = arrayA;
 	let runner = (arrayC.length-1);
 			function execute() {
