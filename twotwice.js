@@ -18,17 +18,17 @@ function compareItems(arrayA, arrayB) {
 				starter +=1;
 				runner = (arrayC.length-1)
 			}
-			arrayC.forEach(function() { execute(); });
+			arrayC.forEach(execute);
 	starter = 0;
 	arrayC = arrayB;
 	runner = (arrayC.length-1);
-			arrayC.forEach(function() { execute(); });
+			arrayC.forEach(execute);
 	starter = 0;
 	arrayC = sameItems;
 	sameItems = [];
 	runner = (arrayC.length-1);
 	counter = 0;
-			arrayC.forEach(function(item, index, array) {
+			arrayC.forEach(function() {
 					while (starter < runner) {
 						if (arrayC[starter] === arrayC[runner]) {
 							if (sameItems.includes(arrayC[starter]) === false) {
