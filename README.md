@@ -6,4 +6,4 @@ The solution:
 
 function compareItems(arrayA, arrayB) { let counter = 0; let starter = 0; let sameItems = []; let arrayC = arrayA; let runner = (arrayC.length-1); function execute() { while (starter < runner) { if (arrayC[starter] === arrayC[runner]) { sameItems.push(arrayC[starter]); counter +=1; } runner -=1; } starter +=1; runner = (arrayC.length-1) } arrayC.forEach(execute); starter = 0; arrayC = arrayB; runner = (arrayC.length-1); arrayC.forEach(execute); starter = 0; arrayC = sameItems; sameItems = []; runner = (arrayC.length-1); counter = 0; arrayC.forEach(function() { while (starter < runner) { if (arrayC[starter] === arrayC[runner]) { if (sameItems.includes(arrayC[starter]) === false) { sameItems.push(arrayC[starter]); counter +=1; } } runner -=1; } starter +=1; runner = (arrayC.length-1) }); console.log(counter + ' - ' + sameItems); return sameItems; }
 
-Only consol, without web interface. 
+Only console, without web interface. 
